@@ -1,0 +1,65 @@
+  <div class="home-banner">
+    <h1>Cocktail Menu</h1>
+    <%= link_to "Add a new cocktail", new_cocktail_path, class: 'btn btn-primary center-block', class: "add-cocktail-btn" %>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <% @cocktails.each do |cocktail| %>
+
+      <div class="col-sm-4 portfolio-item">
+        <div class="card h-100 card-img-top">
+          <%= link_to image_tag('bloodymary.jpeg', class: "card-image"), cocktail_path(cocktail) %>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#"><%= link_to cocktail.name, cocktail_path(cocktail) %></a>
+            </h4>
+
+          </div>
+        </div>
+      </div>
+
+      <% end %>
+    </div>
+
+
+
+    <div class="pagination-flex">
+      <ul class="pagination text-center">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only">Previous</span>
+          </a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">3</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only">Next</span>
+          </a>
+        </li>
+      </ul>
+
+
+    </div>
+
+
+
+
+  </div>
