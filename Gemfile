@@ -45,7 +45,7 @@ gem 'font-awesome-sass', '~> 5.0.9'
 gem 'simple_form'
 
 # Hide keys
-# gem 'dotenv-rails', groups: [:development, :test]
+gem 'dotenv-rails', groups: [:development, :test]
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
