@@ -1,0 +1,40 @@
+
+.card-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+
+
+
+.card-item {
+  width: 350px;
+  padding: 10px;
+  margin: 10px;
+  img {
+    width: 350px;
+
+  }
+}
+
+.card-body {
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-radius: 3px;
+
+}
+
+.card-body h4 {
+  color: #333333;
+  text-decoration: none;
+
+  a {
+    color: #333333;
+    text-decoration: none;
+    font-weight: lighter;
+
+  }
+}
