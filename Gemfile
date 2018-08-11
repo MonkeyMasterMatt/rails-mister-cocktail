@@ -46,6 +46,9 @@ gem 'simple_form'
 gem 'cloudinary'
 gem 'carrierwave', '~> 1.2'
 
+# Sitepoint gems
+gem 'youtube_it'
+
 # Hide keys
 gem 'dotenv-rails', groups: [:development, :test]
 
